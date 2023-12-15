@@ -1,0 +1,321 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 255, 255);
+}
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url("../image/background1.gif") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px;
+}
+
+img {
+    max-width: 100%;
+}
+div.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+div.post div.image{
+    width: 40%;
+}
+div.post div.texts h2 {
+    margin: 0;
+    font-size: 10%;
+    text-align: right;
+}
+@media screen and (max-width: 992px) {
+    div.post div.image {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width: 700px) {
+    div.post div.image {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.blog-section {
+    width: 100%;
+}
+
+.blog-section .section-content {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.blog-section .section-content .title {
+    width: 85%;
+    text-align: center;
+    margin:auto;
+}
+
+.blog-section .section-content .title h1 {
+    font-size: 40px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.blog-section .section-content .title p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    justify-items: end;
+}
+
+.blog-section .section-content .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 50px;
+    margin: 15px auto;
+}
+
+.blog-section .section-content .cards .card {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.blog-section .section-content .cards .card img{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.blog-section .section-content .cards .card .article {
+    padding: 20px 10px;
+}
+
+.blog-section .section-content .cards .card .article h1{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.blog-section .section-content .cards .card .article p{
+    font-size: 16px;
+    margin: 10px 0px;
+    color: rgb(0, 0, 0);
+}
+
+.blog-section .section-content .cards .card a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    padding: 8px 15px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.blog-section .section-content .cards .card .posted-date p {
+    font-weight: 650;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    padding: 2px 20px;
+}
+@media screen and (max-width: 992px) {
+    .blog-section .section-content .cards {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width: 700px) {
+    .blog-section .section-content .cards {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contact h2 {
+    font-size: 40px;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    width: 620px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+.input-box .input-field {
+    width: 48.5%;
+}
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 3px solid rgb(2, 2, 2);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin: 3px 0;
+}
+
+.field.error .item {
+    border-color: #f80202
+}
+.field.error .error-txt {
+    display: block;
+}
+
+.field .item::placeholder {
+    color: rgb(0, 0, 0);
+}
+.field .error-txt {
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+form .textarea-field .item{
+    resize: none;
+}
+form button {
+    padding: 12px 32px;
+    background: rgb(1, 1, 12);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 25px rgb(247, 1, 1);
+    font-size: 16px;
+    color: rgb(236, 231, 231);
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
+.masthead {
+    background-size: cover;
+    min-height: 100vh;
+    bottom: 0;
+}
+
+#main-nav{
+    background-color: transparent;
+}
+span {
+    background-color: white;
+    padding: 0.1em 0.2em;
+}
+.custom-col {
+    margin-top: 36%;
+}
+i {
+    color: rgb(0, 0, 0);
+}
+.navbar {
+    background-color: rgb(0, 0, 0);
+}
+.navbar-brand {
+    font-family: monospace;
+	color: blue;
+	font-size: 18px;
+}
+.nav-link {
+    font-size: 1rem;
+    font-weight: 800;
+    color: white;
+    cursor:pointer;
+    text-decoration: none;
+}
+.nav-link:hover {
+    text-decoration: none;
+	background-color: red;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+.column {
+    width: 100%;
+    padding: 0.5em 1;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #050505e1;
+    line-height: 50px;
+    margin-bottom: 15;
+}
+
+@media screen and (min-width: 800px) {
+    section {
+        padding: 1em 2em;
+    }
+}
+@media screen and (min-width: 700px) {
+    section {
+        padding: 1em;
+    }
+    .card {
+        align-content: center;
+    }
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 2em;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
