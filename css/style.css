@@ -9,7 +9,7 @@
 }
 
 body {
-    background: rgb(255, 255, 255);
+    background: rgb(240, 227, 227);
 }
 .home {
     position: relative;
@@ -21,52 +21,15 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 70px;
+    padding: 10px;
 }
-
-img {
-    max-width: 100%;
-}
-div.post {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-div.post div.image{
-    width: 40%;
-}
-div.post div.texts h2 {
-    margin: 0;
-    font-size: 10%;
-    text-align: right;
-}
-@media screen and (max-width: 992px) {
-    div.post div.image {
-        grid-template-columns: repeat(1,1fr);
-    }
-}
-@media screen and (max-width: 700px) {
-    div.post div.image {
-        grid-template-columns: repeat(1,1fr);
-    }
-}
-
-
-
-
-
-
-
-
-
-
 .blog-section {
     width: 100%;
 }
 
 .blog-section .section-content {
     width: 100%;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 .blog-section .section-content .title {
@@ -90,9 +53,9 @@ div.post div.texts h2 {
 
 .blog-section .section-content .cards {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 12fr);
     grid-gap: 50px;
-    margin: 15px auto;
+    margin: 20px 50px;
 }
 
 .blog-section .section-content .cards .card {
@@ -119,7 +82,7 @@ div.post div.texts h2 {
 
 .blog-section .section-content .cards .card .article p{
     font-size: 16px;
-    margin: 10px 0px;
+    margin: 10px 15px;
     color: rgb(0, 0, 0);
 }
 
@@ -139,20 +102,19 @@ div.post div.texts h2 {
     top: 0;
     left: 0;
     display: inline-block;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
     padding: 2px 20px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
     .blog-section .section-content .cards {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1 ,1fr);
     }
 }
 @media screen and (max-width: 700px) {
     .blog-section .section-content .cards {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1 ,1fr);
     }
 }
-
 
 
 
